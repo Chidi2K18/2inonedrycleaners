@@ -1,0 +1,611 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: 8rem;
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 3.5rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2.5rem;
+}
+
+li {
+  font-size: 2rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.home {
+  background: radial-gradient(#1B4332, #131313);
+}
+
+.nav-container {
+  width: 100%;
+  background: #212529;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.nav-container nav {
+  width: 80%;
+  margin: auto;
+  min-width: 10vh;
+  padding: 3rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+.nav-container ul li {
+  margin-left: 30px;
+}
+
+.nav-container #logo {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  position: relative;
+}
+
+.nav-container #logo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15rem;
+  height: 6rem;
+  background: #2d6a4f;
+  border-radius: 90%;
+  -webkit-transform: translate(-30%, -20%);
+          transform: translate(-30%, -20%);
+  mix-blend-mode: screen;
+}
+
+.nav-container .order {
+  background: #2d6a4f;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+
+.dealsandiscounts {
+  display: -ms-grid;
+  display: grid;
+  min-height: 91.2vh;
+  -ms-grid-columns: 20% (minmax(5rem, 1fr))[3] 10%;
+      grid-template-columns: 20% repeat(3, minmax(5rem, 1fr)) 10%;
+  -ms-grid-rows: 1fr 2fr 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+}
+
+.dealsandiscounts h2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.dealsandiscounts img {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.dealsandiscounts .info {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.dealsandiscounts .info h3 {
+  padding-bottom: 1rem;
+}
+
+.Services-container {
+  background: #323232;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+#Services {
+  min-height: 90vh;
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+img {
+  width: 60%;
+  margin-left: 35px;
+}
+
+.cards {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: black;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  margin-top: 10px;
+}
+
+.cards .card {
+  background: white;
+  margin: rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  text-align: center;
+}
+
+.cards .card h4 {
+  margin: 3rem 0rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+.cards .card p {
+  padding: 2rem;
+}
+
+.cards .barba-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: black;
+}
+
+.cards .barba-container .card {
+  background: white;
+  margin: 0rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.cards .barba-container .card h4 {
+  margin: 3rem 0rem 0rem;
+}
+
+.cards .barba-container .card p {
+  padding: 2rem;
+}
+
+.cards .unhide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: black;
+}
+
+.cards .unhide .card {
+  background: white;
+  margin: 0rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.cards .unhide .card h4 {
+  margin: 3rem 0rem 0rem;
+}
+
+.cards .unhide .card p {
+  padding: 2rem;
+}
+
+.container {
+  width: 100%;
+  margin-left: 130px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  width: 20%;
+  float: left;
+  text-align: center;
+  background: #ffffff;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  color: #222222;
+  padding: 0.5%;
+  margin: 0.5%;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+input[type="radio"][id="suits"]:checked + label {
+  background: #6666ff;
+}
+
+input[type="radio"][id="suits"]:checked ~ .jackets, input[type="radio"][id="suits"]:checked ~ .trousers, input[type="radio"][id="suits"]:checked ~ .skirt, input[type="radio"][id="suits"]:checked ~ .dress, input[type="radio"][id="suits"]:checked ~ .coat, input[type="radio"][id="suits"]:checked ~ .tops, input[type="radio"][id="suits"]:checked ~ .shirts, input[type="radio"][id="suits"]:checked ~ .j_s_k, input[type="radio"][id="suits"]:checked ~ .leathersuede, input[type="radio"][id="suits"]:checked ~ .embroydery, input[type="radio"][id="suits"]:checked ~ .repair, input[type="radio"][id="suits"]:checked ~ .shoerepair, input[type="radio"][id="suits"]:checked ~ .ammendments {
+  display: none;
+}
+
+input[type="radio"][id="jackets"]:checked + label {
+  background: #ff4466;
+}
+
+input[type="radio"][id="jackets"]:checked ~ .suits, input[type="radio"][id="jackets"]:checked ~ .trousers, input[type="radio"][id="jackets"]:checked ~ .skirt, input[type="radio"][id="jackets"]:checked ~ .dress, input[type="radio"][id="jackets"]:checked ~ .coat, input[type="radio"][id="jackets"]:checked ~ .tops, input[type="radio"][id="jackets"]:checked ~ .shirts, input[type="radio"][id="jackets"]:checked ~ .j_s_k, input[type="radio"][id="jackets"]:checked ~ .leathersuede {
+  display: none;
+}
+
+input[type="radio"][id="trousers"]:checked + label {
+  background: #66dd99;
+}
+
+input[type="radio"][id="trousers"]:checked ~ .suits, input[type="radio"][id="trousers"]:checked ~ .jackets, input[type="radio"][id="trousers"]:checked ~ .skirt, input[type="radio"][id="trousers"]:checked ~ .dress, input[type="radio"][id="trousers"]:checked ~ .coat, input[type="radio"][id="trousers"]:checked ~ .tops, input[type="radio"][id="trousers"]:checked ~ .shirts, input[type="radio"][id="trousers"]:checked ~ .j_s_k, input[type="radio"][id="trousers"]:checked ~ .leathersuede {
+  display: none;
+}
+
+input[type="radio"][id="skirt"]:checked + label {
+  background: yellow;
+}
+
+input[type="radio"][id="skirt"]:checked ~ .suits, input[type="radio"][id="skirt"]:checked ~ .jackets, input[type="radio"][id="skirt"]:checked ~ .trousers, input[type="radio"][id="skirt"]:checked ~ .dress, input[type="radio"][id="skirt"]:checked ~ .coat, input[type="radio"][id="skirt"]:checked ~ .tops, input[type="radio"][id="skirt"]:checked ~ .shirts, input[type="radio"][id="skirt"]:checked ~ .j_s_k, input[type="radio"][id="skirt"]:checked ~ .leathersuede {
+  display: none;
+}
+
+input[type="radio"][id="dress"]:checked + label {
+  background: #4b0082;
+}
+
+input[type="radio"][id="dress"]:checked ~ .suits, input[type="radio"][id="dress"]:checked ~ .jackets, input[type="radio"][id="dress"]:checked ~ .trousers, input[type="radio"][id="dress"]:checked ~ .skirt, input[type="radio"][id="dress"]:checked ~ .coat, input[type="radio"][id="dress"]:checked ~ .tops, input[type="radio"][id="dress"]:checked ~ .shirts, input[type="radio"][id="dress"]:checked ~ .j_s_k, input[type="radio"][id="dress"]:checked ~ .leathersuede {
+  display: none;
+}
+
+input[type="radio"][id="coat"]:checked + label {
+  background: #e28c58;
+}
+
+input[type="radio"][id="coat"]:checked ~ .suits, input[type="radio"][id="coat"]:checked ~ .jackets, input[type="radio"][id="coat"]:checked ~ .trousers, input[type="radio"][id="coat"]:checked ~ .skirt, input[type="radio"][id="coat"]:checked ~ .dress, input[type="radio"][id="coat"]:checked ~ .tops, input[type="radio"][id="coat"]:checked ~ .shirts, input[type="radio"][id="coat"]:checked ~ .j_s_k, input[type="radio"][id="coat"]:checked ~ .leathersuede {
+  display: none;
+}
+
+input[type="radio"][id="tops"]:checked + label {
+  background: #e084dd;
+}
+
+input[type="radio"][id="tops"]:checked ~ .suits, input[type="radio"][id="tops"]:checked ~ .jackets, input[type="radio"][id="tops"]:checked ~ .trousers, input[type="radio"][id="tops"]:checked ~ .skirt, input[type="radio"][id="tops"]:checked ~ .dress, input[type="radio"][id="tops"]:checked ~ .coat, input[type="radio"][id="tops"]:checked ~ .shirts, input[type="radio"][id="tops"]:checked ~ .j_s_k, input[type="radio"][id="tops"]:checked ~ .leathersuede {
+  display: none;
+}
+
+input[type="radio"][id="shirts"]:checked + label {
+  background: #576190;
+}
+
+input[type="radio"][id="shirts"]:checked ~ .suits, input[type="radio"][id="shirts"]:checked ~ .jackets, input[type="radio"][id="shirts"]:checked ~ .trousers, input[type="radio"][id="shirts"]:checked ~ .skirt, input[type="radio"][id="shirts"]:checked ~ .dress, input[type="radio"][id="shirts"]:checked ~ .coat, input[type="radio"][id="shirts"]:checked ~ .tops, input[type="radio"][id="shirts"]:checked ~ .j_s_k, input[type="radio"][id="shirts"]:checked ~ .leathersuede {
+  display: none;
+}
+
+input[type="radio"][id="j_s_k"]:checked + label {
+  background: #baa65d;
+}
+
+input[type="radio"][id="j_s_k"]:checked ~ .suits, input[type="radio"][id="j_s_k"]:checked ~ .jackets, input[type="radio"][id="j_s_k"]:checked ~ .trousers, input[type="radio"][id="j_s_k"]:checked ~ .skirt, input[type="radio"][id="j_s_k"]:checked ~ .dress, input[type="radio"][id="j_s_k"]:checked ~ .coat, input[type="radio"][id="j_s_k"]:checked ~ .tops, input[type="radio"][id="j_s_k"]:checked ~ .shirts, input[type="radio"][id="j_s_k"]:checked ~ .leathersuede {
+  display: none;
+}
+
+input[type="radio"][id="leathersuede"]:checked + label {
+  background: #c7d4de;
+}
+
+input[type="radio"][id="ammendments"]:checked ~ .suits, input[type="radio"][id="leathersuede"]:checked ~ .jackets, input[type="radio"][id="leathersuede"]:checked ~ .trousers, input[type="radio"][id="leathersuede"]:checked ~ .skirt, input[type="radio"][id="leathersuede"]:checked ~ .dress, input[type="radio"][id="leathersuede"]:checked ~ .coat, input[type="radio"][id="leathersuede"]:checked ~ .tops, input[type="radio"][id="leathersuede"]:checked ~ .shirts, input[type="radio"][id="leathersuede"]:checked ~ .j_s_k {
+  display: none;
+}
+
+input[type="radio"][id="repair"]:checked ~ .suits, input[type="radio"][id="leathersuede"]:checked ~ .jackets, input[type="radio"][id="leathersuede"]:checked ~ .trousers, input[type="radio"][id="leathersuede"]:checked ~ .skirt, input[type="radio"][id="leathersuede"]:checked ~ .dress, input[type="radio"][id="leathersuede"]:checked ~ .coat, input[type="radio"][id="leathersuede"]:checked ~ .tops, input[type="radio"][id="leathersuede"]:checked ~ .shirts, input[type="radio"][id="leathersuede"]:checked ~ .j_s_k {
+  display: none;
+}
+
+input[type="radio"][id="shoerepair"]:checked ~ .suits, input[type="radio"][id="leathersuede"]:checked ~ .jackets, input[type="radio"][id="leathersuede"]:checked ~ .trousers, input[type="radio"][id="leathersuede"]:checked ~ .skirt, input[type="radio"][id="leathersuede"]:checked ~ .dress, input[type="radio"][id="leathersuede"]:checked ~ .coat, input[type="radio"][id="leathersuede"]:checked ~ .tops, input[type="radio"][id="leathersuede"]:checked ~ .shirts, input[type="radio"][id="leathersuede"]:checked ~ .j_s_k {
+  display: none;
+}
+
+input[type="radio"][id="embroydery"]:checked ~ .suits, input[type="radio"][id="leathersuede"]:checked ~ .jackets, input[type="radio"][id="leathersuede"]:checked ~ .trousers, input[type="radio"][id="leathersuede"]:checked ~ .skirt, input[type="radio"][id="leathersuede"]:checked ~ .dress, input[type="radio"][id="leathersuede"]:checked ~ .coat, input[type="radio"][id="leathersuede"]:checked ~ .tops, input[type="radio"][id="leathersuede"]:checked ~ .shirts, input[type="radio"][id="leathersuede"]:checked ~ .j_s_k {
+  display: none;
+}
+
+.tile {
+  width: 90%;
+  float: left;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  margin: 0.5%;
+  padding: 0.5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[5];
+      grid-template-columns: repeat(5, minmax(200px, 1fr));
+}
+
+.trousers {
+  background: #66dd99;
+}
+
+.suits {
+  background: #6666ff;
+}
+
+.jackets {
+  background: #ff4466;
+}
+
+.skirt {
+  background: yellow;
+}
+
+.dress {
+  background: #4b0082;
+}
+
+.coat {
+  background: #e28c58;
+}
+
+.tops {
+  background: #e084dd;
+}
+
+.shirts {
+  background: #576190;
+}
+
+.j_s_k {
+  background: #baa65d;
+}
+
+.leathersuede {
+  background: #c7d4de;
+}
+
+.ammendments {
+  background: #66dd99;
+}
+
+.repair {
+  background: #c7d4de;
+}
+
+.shoerepair {
+  background: #ff4466;
+}
+
+.embroydery {
+  background: goldenrod;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bookings {
+  background-color: #323232;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 600px;
+}
+
+.booking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+  background: black;
+}
+
+.booking #newfname, .booking #newlname {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+form {
+  display: hidden;
+  font-size: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+form #fname, form #lname, form #choice, form #dropoffdate {
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+form #submit {
+  width: 20%;
+  border: 3px solid white;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 20px;
+}
+
+input {
+  width: 90%;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+  nav ul li {
+    margin-left: 5rem;
+  }
+  .dealsandiscounts {
+    -ms-grid-columns: 10% 1fr 10%;
+        grid-template-columns: 10% 1fr 10%;
+  }
+  .dealsandiscounts img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .dealsandiscounts img, .dealsandiscounts h2, .dealsandiscounts .info {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    text-align: center;
+  }
+  .Services-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Services-container h2 {
+    margin-top: 5rem;
+  }
+  .Services-container .container {
+    margin-left: 0;
+  }
+  .Services-container .tile {
+    -ms-grid-columns: (minmax(20%, 1fr))[4];
+        grid-template-columns: repeat(4, minmax(20%, 1fr));
+  }
+  .Services-container .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Services-container .cards .card {
+    margin: 5rem 0rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

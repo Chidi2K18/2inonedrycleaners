@@ -1,0 +1,83 @@
+@import '_mixins.scss';
+.Services-container{
+    background: #323232;
+}
+.container-fluid{
+  padding: 0;
+  margin: 0;
+}
+#Services{
+    min-height: 90vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+      }
+    img{
+        width: 60%;
+        margin-left: 35px;
+    }
+    .cards{
+      width: 40%;
+        display: flex;
+        justify-content: space-between;
+        color: black;
+        flex-flow: column wrap;
+        margin-top: 10px;
+        .card{
+            background: white;
+            margin: rem 5rem;
+            display: flex;
+            flex-flow: row;
+            text-align: center;
+            h4{
+                margin: 3rem 0rem;
+                padding-right: 4rem;
+                padding-left: 4rem;
+            }
+            p{
+                padding: 2rem;
+            }
+        }
+        .barba-container{
+            @include cards;
+        }
+        .unhide{
+          @include cards;
+        }
+    }
+.container {
+  width:100%;
+  margin-left: 130px;
+}
+input[type="radio"] {
+    display:none;
+}
+label {
+  width:20%;
+  float:left;
+  text-align:center;
+  background:#ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  color:#222222;
+  padding:0.5%;
+  margin:0.5%;
+  margin-bottom:30px;
+  cursor:pointer;
+}
+
+@include buttons;
+
+.tile {
+  width:90%;
+  float:left;
+  transition:all 1s;
+  margin:0.5%;
+  padding:0.5%;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(200px, 1fr))
+}
+
+
+@include colours;

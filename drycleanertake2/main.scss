@@ -1,0 +1,86 @@
+html{
+    font-size: 62.5%;
+}
+//1rem = 10-10.5px
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+h2{
+    font-size: 8rem;
+    font-weight: lighter;
+}
+h3{
+    font-size: 3.5rem;
+}
+h4{
+    font-size: 3rem;
+}
+p{
+    font-size: 2.5rem;
+}
+li{
+    font-size: 2rem;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+@import '_Variables.scss';
+@import '_functions.scss';
+@import '_mixins.scss';
+@import '_home.scss';
+@import '_services.scss';
+@import '_bookings.scss';
+
+@media screen and (max-width: 1200px){
+    html{
+        font-size: 50%;
+    }
+    nav{
+        ul{
+            li{
+                margin-left: 5rem;
+            }
+        }
+    }
+    .dealsandiscounts{
+       grid-template-columns: 10% 1fr 10%; 
+       img{
+           width: 100%;
+           object-fit: contain;
+       }
+       img, h2, .info{
+           grid-column: 2/3;
+           text-align: center;
+       }
+    }
+    .Services-container{
+        align-items: center;
+        h2{
+            margin-top: 5rem;
+        }
+        .container{
+            margin-left: 0;
+        }
+        .tile{
+            grid-template-columns: repeat(4, minmax(20%, 1fr))
+        }
+        .cards{
+            flex-direction: column;
+            .card{
+                margin: 5rem 0rem;
+            }
+        }
+    }
+}

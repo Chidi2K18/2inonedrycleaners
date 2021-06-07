@@ -1,0 +1,144 @@
+@import '_variables.scss';
+
+@mixin flex($justify) {
+    display: flex;
+    justify-content: $justify;
+}
+@mixin cards {
+    display: flex;
+        justify-content: space-between;
+        color: black;
+        .card{
+            background: white;
+            margin: 0rem 3rem;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            h4{
+                margin: 3rem 0rem 0rem;
+            }
+            p{
+                padding: 2rem;
+            }
+        }
+}
+@mixin colours {
+  .trousers {
+    background:#66dd99;
+  }
+  .suits {
+    background:#6666ff;
+  }
+  .jackets {
+    background:#ff4466;
+  }
+  .skirt{
+    background: yellow;
+  }
+  .dress{
+    background: #4b0082;
+  }
+  .coat{
+    background: #e28c58;
+  }
+  .tops{
+    background: #e084dd;
+  }
+  .shirts{
+    background: #576190;
+  }
+  .j_s_k{
+    background: #baa65d;
+  }
+  .leathersuede{
+    background: #c7d4de;
+  }
+  .ammendments{
+    background: #66dd99;
+  }
+  .repair{
+    background: #c7d4de;
+  }
+  .shoerepair{
+    background: #ff4466;
+  }
+  .embroydery{
+    background: goldenrod;
+  }
+}
+@mixin buttons {
+  input[type="radio"][id="suits"]:checked + label {
+    background:#6666ff;
+  }
+  input[type="radio"][id="suits"]:checked ~ .jackets, input[type="radio"][id="suits"]:checked ~ .trousers, input[type="radio"][id="suits"]:checked ~ .skirt, input[type="radio"][id="suits"]:checked ~ .dress, input[type="radio"][id="suits"]:checked ~ .coat, input[type="radio"][id="suits"]:checked ~ .tops, input[type="radio"][id="suits"]:checked ~ .shirts, input[type="radio"][id="suits"]:checked ~ .j_s_k, input[type="radio"][id="suits"]:checked ~ .leathersuede, input[type="radio"][id="suits"]:checked ~ .embroydery, input[type="radio"][id="suits"]:checked ~ .repair, input[type="radio"][id="suits"]:checked ~ .shoerepair, input[type="radio"][id="suits"]:checked ~ .ammendments {
+    display: none;
+  }
+  input[type="radio"][id="jackets"]:checked + label {
+    background:#ff4466;
+  }
+  input[type="radio"][id="jackets"]:checked ~ .suits, input[type="radio"][id="jackets"]:checked ~ .trousers, input[type="radio"][id="jackets"]:checked ~ .skirt, input[type="radio"][id="jackets"]:checked ~ .dress, input[type="radio"][id="jackets"]:checked ~ .coat, input[type="radio"][id="jackets"]:checked ~ .tops, input[type="radio"][id="jackets"]:checked ~ .shirts, input[type="radio"][id="jackets"]:checked ~ .j_s_k, input[type="radio"][id="jackets"]:checked ~ .leathersuede {
+    display: none;
+  }
+  input[type="radio"][id="trousers"]:checked + label {
+    background:#66dd99;
+  }
+  input[type="radio"][id="trousers"]:checked ~ .suits, input[type="radio"][id="trousers"]:checked ~ .jackets, input[type="radio"][id="trousers"]:checked ~ .skirt, input[type="radio"][id="trousers"]:checked ~ .dress, input[type="radio"][id="trousers"]:checked ~ .coat, input[type="radio"][id="trousers"]:checked ~ .tops, input[type="radio"][id="trousers"]:checked ~ .shirts, input[type="radio"][id="trousers"]:checked ~ .j_s_k, input[type="radio"][id="trousers"]:checked ~ .leathersuede  {
+    display: none;
+  }
+  input[type="radio"][id="skirt"]:checked + label {
+    background: yellow;
+  }
+  input[type="radio"][id="skirt"]:checked ~ .suits, input[type="radio"][id="skirt"]:checked ~ .jackets , input[type="radio"][id="skirt"]:checked ~ .trousers, input[type="radio"][id="skirt"]:checked ~ .dress, input[type="radio"][id="skirt"]:checked ~ .coat, input[type="radio"][id="skirt"]:checked ~ .tops, input[type="radio"][id="skirt"]:checked ~ .shirts, input[type="radio"][id="skirt"]:checked ~ .j_s_k, input[type="radio"][id="skirt"]:checked ~ .leathersuede{
+    display: none;
+  }
+  input[type="radio"][id="dress"]:checked + label {
+    background: #4b0082;
+  }
+  input[type="radio"][id="dress"]:checked ~ .suits, input[type="radio"][id="dress"]:checked ~ .jackets , input[type="radio"][id="dress"]:checked ~ .trousers, input[type="radio"][id="dress"]:checked ~ .skirt, input[type="radio"][id="dress"]:checked ~ .coat, input[type="radio"][id="dress"]:checked ~ .tops, input[type="radio"][id="dress"]:checked ~ .shirts, input[type="radio"][id="dress"]:checked ~ .j_s_k, input[type="radio"][id="dress"]:checked ~ .leathersuede{
+    display: none;
+  }
+  input[type="radio"][id="coat"]:checked + label {
+    background: #e28c58;
+  }
+  input[type="radio"][id="coat"]:checked ~ .suits, input[type="radio"][id="coat"]:checked ~ .jackets , input[type="radio"][id="coat"]:checked ~ .trousers, input[type="radio"][id="coat"]:checked ~ .skirt, input[type="radio"][id="coat"]:checked ~ .dress, input[type="radio"][id="coat"]:checked ~ .tops, input[type="radio"][id="coat"]:checked ~ .shirts, input[type="radio"][id="coat"]:checked ~ .j_s_k, input[type="radio"][id="coat"]:checked ~ .leathersuede{
+    display: none;
+  }
+  input[type="radio"][id="tops"]:checked + label {
+    background: #e084dd;
+  }
+  input[type="radio"][id="tops"]:checked ~ .suits, input[type="radio"][id="tops"]:checked ~ .jackets , input[type="radio"][id="tops"]:checked ~ .trousers, input[type="radio"][id="tops"]:checked ~ .skirt, input[type="radio"][id="tops"]:checked ~ .dress, input[type="radio"][id="tops"]:checked ~ .coat, input[type="radio"][id="tops"]:checked ~ .shirts, input[type="radio"][id="tops"]:checked ~ .j_s_k, input[type="radio"][id="tops"]:checked ~ .leathersuede{
+    display: none;
+  }
+  input[type="radio"][id="shirts"]:checked + label {
+    background: #576190;
+  }
+  input[type="radio"][id="shirts"]:checked ~ .suits, input[type="radio"][id="shirts"]:checked ~ .jackets , input[type="radio"][id="shirts"]:checked ~ .trousers, input[type="radio"][id="shirts"]:checked ~ .skirt, input[type="radio"][id="shirts"]:checked ~ .dress, input[type="radio"][id="shirts"]:checked ~ .coat, input[type="radio"][id="shirts"]:checked ~ .tops, input[type="radio"][id="shirts"]:checked ~ .j_s_k, input[type="radio"][id="shirts"]:checked ~ .leathersuede{
+    display: none;
+  }
+  input[type="radio"][id="j_s_k"]:checked + label {
+    background: #baa65d;
+  }
+  input[type="radio"][id="j_s_k"]:checked ~ .suits, input[type="radio"][id="j_s_k"]:checked ~ .jackets , input[type="radio"][id="j_s_k"]:checked ~ .trousers, input[type="radio"][id="j_s_k"]:checked ~ .skirt, input[type="radio"][id="j_s_k"]:checked ~ .dress, input[type="radio"][id="j_s_k"]:checked ~ .coat, input[type="radio"][id="j_s_k"]:checked ~ .tops, input[type="radio"][id="j_s_k"]:checked ~ .shirts, input[type="radio"][id="j_s_k"]:checked ~ .leathersuede{
+    display: none;
+  }
+  input[type="radio"][id="leathersuede"]:checked + label {
+    background: #c7d4de;
+  }
+  input[type="radio"][id="ammendments"]:checked ~ .suits, input[type="radio"][id="leathersuede"]:checked ~ .jackets , input[type="radio"][id="leathersuede"]:checked ~ .trousers, input[type="radio"][id="leathersuede"]:checked ~ .skirt, input[type="radio"][id="leathersuede"]:checked ~ .dress, input[type="radio"][id="leathersuede"]:checked ~ .coat, input[type="radio"][id="leathersuede"]:checked ~ .tops, input[type="radio"][id="leathersuede"]:checked ~ .shirts, input[type="radio"][id="leathersuede"]:checked ~ .j_s_k{
+    display: none;
+  }
+  input[type="radio"][id="repair"]:checked ~ .suits, input[type="radio"][id="leathersuede"]:checked ~ .jackets , input[type="radio"][id="leathersuede"]:checked ~ .trousers, input[type="radio"][id="leathersuede"]:checked ~ .skirt, input[type="radio"][id="leathersuede"]:checked ~ .dress, input[type="radio"][id="leathersuede"]:checked ~ .coat, input[type="radio"][id="leathersuede"]:checked ~ .tops, input[type="radio"][id="leathersuede"]:checked ~ .shirts, input[type="radio"][id="leathersuede"]:checked ~ .j_s_k{
+    display: none;
+  }
+  input[type="radio"][id="shoerepair"]:checked ~ .suits, input[type="radio"][id="leathersuede"]:checked ~ .jackets , input[type="radio"][id="leathersuede"]:checked ~ .trousers, input[type="radio"][id="leathersuede"]:checked ~ .skirt, input[type="radio"][id="leathersuede"]:checked ~ .dress, input[type="radio"][id="leathersuede"]:checked ~ .coat, input[type="radio"][id="leathersuede"]:checked ~ .tops, input[type="radio"][id="leathersuede"]:checked ~ .shirts, input[type="radio"][id="leathersuede"]:checked ~ .j_s_k{
+    display: none;
+  }
+  input[type="radio"][id="embroydery"]:checked ~ .suits, input[type="radio"][id="leathersuede"]:checked ~ .jackets , input[type="radio"][id="leathersuede"]:checked ~ .trousers, input[type="radio"][id="leathersuede"]:checked ~ .skirt, input[type="radio"][id="leathersuede"]:checked ~ .dress, input[type="radio"][id="leathersuede"]:checked ~ .coat, input[type="radio"][id="leathersuede"]:checked ~ .tops, input[type="radio"][id="leathersuede"]:checked ~ .shirts, input[type="radio"][id="leathersuede"]:checked ~ .j_s_k{
+    display: none;
+  }
+}
+@mixin standardDiv {
+    @include flex(center);
+    align-items: center;
+    height: 600px;
+}
