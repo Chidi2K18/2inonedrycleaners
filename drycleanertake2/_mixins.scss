@@ -76,7 +76,7 @@
   input[type="radio"][id="jackets"]:checked + label {
     background:#ff4466;
   }
-  input[type="radio"][id="jackets"]:checked ~ .suits, input[type="radio"][id="jackets"]:checked ~ .trousers, input[type="radio"][id="jackets"]:checked ~ .skirt, input[type="radio"][id="jackets"]:checked ~ .dress, input[type="radio"][id="jackets"]:checked ~ .coat, input[type="radio"][id="jackets"]:checked ~ .tops, input[type="radio"][id="jackets"]:checked ~ .shirts, input[type="radio"][id="jackets"]:checked ~ .j_s_k, input[type="radio"][id="jackets"]:checked ~ .leathersuede {
+  input[type="radio"][id="jackets"]:checked ~ .suits, input[type="radio"][id="jackets"]:checked ~ .trousers, input[type="radio"][id="jackets"]:checked ~ .skirt, input[type="radio"][id="jackets"]:checked ~ .dress, input[type="radio"][id="jackets"]:checked ~ .coat, input[type="radio"][id="jackets"]:checked ~ .tops, input[type="radio"][id="jackets"]:checked ~ .shirts, input[type="radio"][id="jackets"]:checked ~ .j_s_k, input[type="radio"][id="jackets"]:checked ~ .leathersuede, input[type="radio"][id="suits"]:checked ~ .embroydery, input[type="radio"][id="suits"]:checked ~ .repair, input[type="radio"][id="suits"]:checked ~ .shoerepair, input[type="radio"][id="suits"]:checked ~ .ammendments {
     display: none;
   }
   input[type="radio"][id="trousers"]:checked + label {
