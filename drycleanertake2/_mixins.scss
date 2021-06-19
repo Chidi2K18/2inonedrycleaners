@@ -4,7 +4,7 @@
     display: flex;
     justify-content: $justify;
 }
-@mixin cards {
+/*@mixin cards {
     display: flex;
         justify-content: space-between;
         color: black;
@@ -21,7 +21,8 @@
                 padding: 2rem;
             }
         }
-}
+}*/
+
 @mixin colours {
   .trousers {
     background:#66dd99;
@@ -93,6 +94,7 @@
   }
   input[type="radio"][id="dress"]:checked + label {
     background: #4b0082;
+    color: white;
   }
   input[type="radio"][id="dress"]:checked ~ .suits, input[type="radio"][id="dress"]:checked ~ .jackets , input[type="radio"][id="dress"]:checked ~ .trousers, input[type="radio"][id="dress"]:checked ~ .skirt, input[type="radio"][id="dress"]:checked ~ .coat, input[type="radio"][id="dress"]:checked ~ .tops, input[type="radio"][id="dress"]:checked ~ .shirts, input[type="radio"][id="dress"]:checked ~ .j_s_k, input[type="radio"][id="dress"]:checked ~ .leathersuede, input[type="radio"][id="dress"]:checked ~ .embroydery, input[type="radio"][id="dress"]:checked ~ .repair, input[type="radio"][id="dress"]:checked ~ .shoerepair, input[type="radio"][id="dress"]:checked ~ .ammendments{
     display: none;
@@ -111,6 +113,7 @@
   }
   input[type="radio"][id="shirts"]:checked + label {
     background: #576190;
+    color: white;
   }
   input[type="radio"][id="shirts"]:checked ~ .suits, input[type="radio"][id="shirts"]:checked ~ .jackets , input[type="radio"][id="shirts"]:checked ~ .trousers, input[type="radio"][id="shirts"]:checked ~ .skirt, input[type="radio"][id="shirts"]:checked ~ .dress, input[type="radio"][id="shirts"]:checked ~ .coat, input[type="radio"][id="shirts"]:checked ~ .tops, input[type="radio"][id="shirts"]:checked ~ .j_s_k, input[type="radio"][id="shirts"]:checked ~ .leathersuede, input[type="radio"][id="shirts"]:checked ~ .embroydery, input[type="radio"][id="shirts"]:checked ~ .repair, input[type="radio"][id="shirts"]:checked ~ .shoerepair, input[type="radio"][id="shirts"]:checked ~ .ammendments{
     display: none;
@@ -135,6 +138,7 @@
   }
   input[type="radio"][id="shoerepair"]:checked + label {
     background: #ff4466;
+    color: white;
   }
   input[type="radio"][id="shoerepair"]:checked ~ .suits, input[type="radio"][id="shoerepair"]:checked ~ .jackets , input[type="radio"][id="shoerepair"]:checked ~ .trousers, input[type="radio"][id="shoerepair"]:checked ~ .skirt, input[type="radio"][id="shoerepair"]:checked ~ .dress, input[type="radio"][id="shoerepair"]:checked ~ .coat, input[type="radio"][id="shoerepair"]:checked ~ .tops, input[type="radio"][id="shoerepair"]:checked ~ .shirts, input[type="radio"][id="shoerepair"]:checked ~ .j_s_k, input[type="radio"][id="shoerepair"]:checked ~ .repair, input[type="radio"][id="shoerepair"]:checked ~ .ammendments, input[type="radio"][id="shoerepair"]:checked ~ .leathersuede, input[type="radio"][id="shoerepair"]:checked ~ .embroydery{
     display: none;
@@ -155,5 +159,5 @@
 @mixin standardDiv {
     @include flex(center);
     align-items: center;
-    height: 600px;
+    //height: 600px;
 }

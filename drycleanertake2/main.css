@@ -46,74 +46,50 @@ a {
   text-decoration: none;
 }
 
+/*@mixin cards {
+    display: flex;
+        justify-content: space-between;
+        color: black;
+        .card{
+            background: white;
+            margin: 0rem 3rem;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            h4{
+                margin: 3rem 0rem 0rem;
+            }
+            p{
+                padding: 2rem;
+            }
+        }
+}*/
 .home {
   background: radial-gradient(#1B4332, #131313);
 }
 
-.nav-container {
-  width: 100%;
-  background: #212529;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 2;
+.logo {
+  background-color: #2d6a4f;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.nav-container nav {
-  width: 80%;
-  margin: auto;
-  min-width: 10vh;
-  padding: 3rem 0rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.nav-container ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  list-style: none;
-}
-
-.nav-container ul li {
-  margin-left: 30px;
-}
-
-.nav-container #logo {
-  -webkit-box-flex: 4;
-      -ms-flex: 4;
-          flex: 4;
-  position: relative;
-}
-
-.nav-container #logo::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.logo span {
+  color: black;
   width: 15rem;
   height: 6rem;
-  background: #2d6a4f;
+  background: white;
   border-radius: 90%;
   -webkit-transform: translate(-30%, -20%);
           transform: translate(-30%, -20%);
   mix-blend-mode: screen;
+  padding: 5px 10px;
 }
 
-.nav-container .order {
-  background: #2d6a4f;
-  padding: 1rem 2rem;
-  border-radius: 2rem;
+.nav-link span {
+  background-color: #2d6a4f;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .dealsandiscounts {
@@ -163,6 +139,24 @@ a {
   padding-bottom: 1rem;
 }
 
+/*@mixin cards {
+    display: flex;
+        justify-content: space-between;
+        color: black;
+        .card{
+            background: white;
+            margin: 0rem 3rem;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            h4{
+                margin: 3rem 0rem 0rem;
+            }
+            p{
+                padding: 2rem;
+            }
+        }
+}*/
 .Services-container {
   background: #323232;
 }
@@ -173,9 +167,8 @@ a {
 }
 
 #Services {
-  min-height: 90vh;
+  min-height: 100vh;
   width: 80%;
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,119 +176,49 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  padding: 0 20px;
 }
 
 img {
   width: 60%;
-  margin-left: 35px;
+  margin-left: 21%;
 }
 
 .cards {
-  width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: black;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  margin-top: 10px;
+  margin: 1%;
 }
 
-.cards .card {
-  background: white;
-  margin: rem 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
-  text-align: center;
-}
-
-.cards .card h4 {
-  margin: 3rem 0rem;
-  padding-right: 4rem;
-  padding-left: 4rem;
-}
-
-.cards .card p {
-  padding: 2rem;
-}
-
-.cards .barba-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: black;
-}
-
-.cards .barba-container .card {
-  background: white;
-  margin: 0rem 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-}
-
-.cards .barba-container .card h4 {
-  margin: 3rem 0rem 0rem;
-}
-
-.cards .barba-container .card p {
-  padding: 2rem;
-}
-
-.cards .unhide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: black;
-}
-
-.cards .unhide .card {
-  background: white;
-  margin: 0rem 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-}
-
-.cards .unhide .card h4 {
-  margin: 3rem 0rem 0rem;
-}
-
-.cards .unhide .card p {
-  padding: 2rem;
-}
-
+/*.cards{
+      width: 40%;
+        display: flex;
+        justify-content: space-between;
+        color: black;
+        flex-flow: column wrap;
+        margin-top: 10px;
+        .card{
+            background: white;
+            margin: rem 5rem;
+            display: flex;
+            flex-flow: row;
+            text-align: center;
+            h4{
+                margin: 3rem 0rem;
+                padding-right: 4rem;
+                padding-left: 4rem;
+            }
+            p{
+                padding: 2rem;
+            }
+        }
+        .barba-container{
+            @include cards;
+        }
+        .unhide{
+          @include cards;
+        }
+    }*/
 .container {
   width: 100%;
-  margin-left: 130px;
 }
 
 input[type="radio"] {
@@ -303,7 +226,7 @@ input[type="radio"] {
 }
 
 label {
-  width: 20%;
+  width: 32.299%;
   float: left;
   text-align: center;
   background: #ffffff;
@@ -350,6 +273,7 @@ input[type="radio"][id="skirt"]:checked ~ .suits, input[type="radio"][id="skirt"
 
 input[type="radio"][id="dress"]:checked + label {
   background: #4b0082;
+  color: white;
 }
 
 input[type="radio"][id="dress"]:checked ~ .suits, input[type="radio"][id="dress"]:checked ~ .jackets, input[type="radio"][id="dress"]:checked ~ .trousers, input[type="radio"][id="dress"]:checked ~ .skirt, input[type="radio"][id="dress"]:checked ~ .coat, input[type="radio"][id="dress"]:checked ~ .tops, input[type="radio"][id="dress"]:checked ~ .shirts, input[type="radio"][id="dress"]:checked ~ .j_s_k, input[type="radio"][id="dress"]:checked ~ .leathersuede, input[type="radio"][id="dress"]:checked ~ .embroydery, input[type="radio"][id="dress"]:checked ~ .repair, input[type="radio"][id="dress"]:checked ~ .shoerepair, input[type="radio"][id="dress"]:checked ~ .ammendments {
@@ -374,6 +298,7 @@ input[type="radio"][id="tops"]:checked ~ .suits, input[type="radio"][id="tops"]:
 
 input[type="radio"][id="shirts"]:checked + label {
   background: #576190;
+  color: white;
 }
 
 input[type="radio"][id="shirts"]:checked ~ .suits, input[type="radio"][id="shirts"]:checked ~ .jackets, input[type="radio"][id="shirts"]:checked ~ .trousers, input[type="radio"][id="shirts"]:checked ~ .skirt, input[type="radio"][id="shirts"]:checked ~ .dress, input[type="radio"][id="shirts"]:checked ~ .coat, input[type="radio"][id="shirts"]:checked ~ .tops, input[type="radio"][id="shirts"]:checked ~ .j_s_k, input[type="radio"][id="shirts"]:checked ~ .leathersuede, input[type="radio"][id="shirts"]:checked ~ .embroydery, input[type="radio"][id="shirts"]:checked ~ .repair, input[type="radio"][id="shirts"]:checked ~ .shoerepair, input[type="radio"][id="shirts"]:checked ~ .ammendments {
@@ -406,6 +331,7 @@ input[type="radio"][id="repair"]:checked ~ .suits, input[type="radio"][id="repai
 
 input[type="radio"][id="shoerepair"]:checked + label {
   background: #ff4466;
+  color: white;
 }
 
 input[type="radio"][id="shoerepair"]:checked ~ .suits, input[type="radio"][id="shoerepair"]:checked ~ .jackets, input[type="radio"][id="shoerepair"]:checked ~ .trousers, input[type="radio"][id="shoerepair"]:checked ~ .skirt, input[type="radio"][id="shoerepair"]:checked ~ .dress, input[type="radio"][id="shoerepair"]:checked ~ .coat, input[type="radio"][id="shoerepair"]:checked ~ .tops, input[type="radio"][id="shoerepair"]:checked ~ .shirts, input[type="radio"][id="shoerepair"]:checked ~ .j_s_k, input[type="radio"][id="shoerepair"]:checked ~ .repair, input[type="radio"][id="shoerepair"]:checked ~ .ammendments, input[type="radio"][id="shoerepair"]:checked ~ .leathersuede, input[type="radio"][id="shoerepair"]:checked ~ .embroydery {
@@ -439,6 +365,19 @@ input[type="radio"][id="ammendments"]:checked ~ .suits, input[type="radio"][id="
   display: grid;
   -ms-grid-columns: (minmax(200px, 1fr))[5];
       grid-template-columns: repeat(5, minmax(200px, 1fr));
+}
+
+.card {
+  color: black;
+}
+
+.card h4 {
+  text-align: center;
+}
+
+.card p {
+  font-size: small;
+  text-align: center;
 }
 
 .trousers {
@@ -497,6 +436,24 @@ input[type="radio"][id="ammendments"]:checked ~ .suits, input[type="radio"][id="
   background: goldenrod;
 }
 
+/*@mixin cards {
+    display: flex;
+        justify-content: space-between;
+        color: black;
+        .card{
+            background: white;
+            margin: 0rem 3rem;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            h4{
+                margin: 3rem 0rem 0rem;
+            }
+            p{
+                padding: 2rem;
+            }
+        }
+}*/
 section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -520,7 +477,6 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 600px;
 }
 
 .booking {
@@ -581,12 +537,14 @@ input {
   width: 90%;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1090px) {
+  .nav-link span {
+    background-color: unset;
+    padding: 0;
+    border-radius: 0;
+  }
   html {
     font-size: 50%;
-  }
-  nav ul li {
-    margin-left: 5rem;
   }
   .dealsandiscounts {
     -ms-grid-columns: 10% 1fr 10%;
@@ -596,6 +554,7 @@ input {
     width: 100%;
     -o-object-fit: contain;
        object-fit: contain;
+    margin-right: 60px;
   }
   .dealsandiscounts img, .dealsandiscounts h2, .dealsandiscounts .info {
     -ms-grid-column: 2;
@@ -603,20 +562,15 @@ input {
     grid-column: 2/3;
     text-align: center;
   }
-  .Services-container {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .Services-container h2 {
     margin-top: 5rem;
   }
-  .Services-container .container {
-    margin-left: 0;
-  }
   .Services-container .tile {
-    -ms-grid-columns: (minmax(20%, 1fr))[4];
-        grid-template-columns: repeat(4, minmax(20%, 1fr));
+    margin-left: 0;
+    padding: 5%;
+    width: 100%;
+    -ms-grid-columns: (minmax(50%, 1fr))[2];
+        grid-template-columns: repeat(2, minmax(50%, 1fr));
   }
   .Services-container .cards {
     -webkit-box-orient: vertical;

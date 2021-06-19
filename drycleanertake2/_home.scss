@@ -3,52 +3,28 @@
 }
 //1vh = 4.8px
 //1rem = 10-10.5px
-.nav-container{
-    width: 100%;
-    background: #212529;
-    //---------------------this makes the nav scrool with the rest of the page-------//
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    //------------------------------------------------------------//
-    nav{
-        width: 80%;
-        margin: auto;
-        min-width: 10vh;
-        padding: 3rem 0rem;
-        @include flex(space-between);
-        align-items: center;
-    }
-    ul{
-        @include flex(space-between);
-        list-style: none;
-        li{
-            margin-left: 30px;
-        }
-    }
-    #logo{
-        flex: 4;
-        position: relative;
-        &::after{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 15rem;
-            height: 6rem;
-            background: #2d6a4f;
-            border-radius: 90%;
-            transform: translate(-30%, -20%);
-            mix-blend-mode: screen;
-        }
-    }
-    .order{
-        background: #2d6a4f;
-        padding: 1rem 2rem;
-        border-radius: 2rem;
+.logo{
+    background-color: #2d6a4f;
+    padding: 10px;
+    border-radius: 5px;
+    span{
+        color: black;
+        width: 15rem;
+        height: 6rem;
+        background: white;
+        border-radius: 90%;
+        transform: translate(-30%, -20%);
+        mix-blend-mode: screen;
+        padding: 5px 10px;
     }
 }
-
+.nav-link{
+    span{
+        background-color:#2d6a4f;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
 .dealsandiscounts{
     display: grid;
     min-height: 91.2vh;
