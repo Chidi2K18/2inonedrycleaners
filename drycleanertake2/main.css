@@ -355,7 +355,7 @@ input[type="radio"][id="ammendments"]:checked ~ .suits, input[type="radio"][id="
 }
 
 .tile {
-  width: 83%;
+  width: 100%;
   float: left;
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -571,6 +571,52 @@ input {
     width: 100%;
     -ms-grid-columns: (minmax(50%, 1fr))[2];
         grid-template-columns: repeat(2, minmax(50%, 1fr));
+  }
+  .Services-container .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Services-container .cards .card {
+    margin: 5rem 0rem;
+  }
+}
+
+@media screen and (min-width: 1091px) and (max-width: 1330px) {
+  .nav-link span {
+    background-color: unset;
+    padding: 0;
+    border-radius: 0;
+  }
+  html {
+    font-size: 50%;
+  }
+  .dealsandiscounts {
+    -ms-grid-columns: 10% 1fr 10%;
+        grid-template-columns: 10% 1fr 10%;
+  }
+  .dealsandiscounts img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: 60px;
+  }
+  .dealsandiscounts img, .dealsandiscounts h2, .dealsandiscounts .info {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    text-align: center;
+  }
+  .Services-container h2 {
+    margin-top: 5rem;
+  }
+  .Services-container .tile {
+    margin-left: 0;
+    padding: 5%;
+    width: 100%;
+    -ms-grid-columns: (minmax(25%, 1fr))[4];
+        grid-template-columns: repeat(4, minmax(25%, 1fr));
   }
   .Services-container .cards {
     -webkit-box-orient: vertical;
