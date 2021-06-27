@@ -1,7 +1,10 @@
 html{
     font-size: 62.5%;
 }
-//1rem = 10-10.5px
+section{
+    @include flex(center);
+    align-items: center;
+}
 *{
     margin: 0;
     padding: 0;
@@ -41,7 +44,6 @@ a{
 @import '_mixins.scss';
 @import '_home.scss';
 @import '_services.scss';
-@import '_bookings.scss';
 
 @media screen and (max-width: 1090px){
     .nav-link{
@@ -68,7 +70,6 @@ a{
        }
     }
     .Services-container{
-        //align-items: center;
         h2{
             margin-top: 5rem;
         }
@@ -112,7 +113,6 @@ a{
        }
     }
     .Services-container{
-        //align-items: center;
         h2{
             margin-top: 5rem;
         }

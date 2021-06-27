@@ -188,35 +188,6 @@ img {
   margin: 1%;
 }
 
-/*.cards{
-      width: 40%;
-        display: flex;
-        justify-content: space-between;
-        color: black;
-        flex-flow: column wrap;
-        margin-top: 10px;
-        .card{
-            background: white;
-            margin: rem 5rem;
-            display: flex;
-            flex-flow: row;
-            text-align: center;
-            h4{
-                margin: 3rem 0rem;
-                padding-right: 4rem;
-                padding-left: 4rem;
-            }
-            p{
-                padding: 2rem;
-            }
-        }
-        .barba-container{
-            @include cards;
-        }
-        .unhide{
-          @include cards;
-        }
-    }*/
 .container {
   width: 100%;
 }
@@ -359,7 +330,7 @@ input[type="radio"][id="ammendments"]:checked ~ .suits, input[type="radio"][id="
   float: left;
   -webkit-transition: all 1s;
   transition: all 1s;
-  margin: 0.5%;
+  margin: 0.2%;
   padding: 0.5%;
   display: -ms-grid;
   display: grid;
@@ -378,62 +349,6 @@ input[type="radio"][id="ammendments"]:checked ~ .suits, input[type="radio"][id="
 .card p {
   font-size: small;
   text-align: center;
-}
-
-.trousers {
-  background: #66dd99;
-}
-
-.suits {
-  background: #6666ff;
-}
-
-.jackets {
-  background: #ff4466;
-}
-
-.skirt {
-  background: yellow;
-}
-
-.dress {
-  background: #4b0082;
-}
-
-.coat {
-  background: #e28c58;
-}
-
-.tops {
-  background: #e084dd;
-}
-
-.shirts {
-  background: #576190;
-}
-
-.j_s_k {
-  background: #baa65d;
-}
-
-.leathersuede {
-  background: #c7d4de;
-}
-
-.ammendments {
-  background: #66dd99;
-}
-
-.repair {
-  background: cornflowerblue;
-}
-
-.shoerepair {
-  background: #ff4466;
-}
-
-.embroydery {
-  background: goldenrod;
 }
 
 /*@mixin cards {

@@ -23,50 +23,7 @@
         }
 }*/
 
-@mixin colours {
-  .trousers {
-    background:#66dd99;
-  }
-  .suits {
-    background:#6666ff;
-  }
-  .jackets {
-    background:#ff4466;
-  }
-  .skirt{
-    background: yellow;
-  }
-  .dress{
-    background: #4b0082;
-  }
-  .coat{
-    background: #e28c58;
-  }
-  .tops{
-    background: #e084dd;
-  }
-  .shirts{
-    background: #576190;
-  }
-  .j_s_k{
-    background: #baa65d;
-  }
-  .leathersuede{
-    background: #c7d4de;
-  }
-  .ammendments{
-    background: #66dd99;
-  }
-  .repair{
-    background: cornflowerblue;
-  }
-  .shoerepair{
-    background: #ff4466;
-  }
-  .embroydery{
-    background: goldenrod;
-  }
-}
+
 @mixin buttons {
   input[type="radio"][id="suits"]:checked + label {
     background:#6666ff;
